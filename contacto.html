@@ -53,21 +53,8 @@
                 <div class="contact-form">
                     <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;">Envíanos un Mensaje</h3>
                     
-                    <!--
-                    ===================================================================
-                    IMPORTANTE: Este formulario HTML es solo estructural.
-                    Para que funcione correctamente y envíe los mensajes, es necesario
-                    configurar un backend de terceros como:
-                    - Formspree (https://formspree.io)
-                    - Netlify Forms
-                    - EmailJS
-                    - O cualquier otro servicio similar.
-                    
-                    Ejemplo con Formspree:
-                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                    ===================================================================
-                    -->
-                    <form action="#" method="POST">
+                    <!-- IMPORTANTE: Requiere backend (ej: Formspree) para funcionar -->
+                    <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Para enviar mensajes, configure un servicio backend como Formspree.')">
                         <div class="form-group">
                             <label for="nombre">Nombre Completo *</label>
                             <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
